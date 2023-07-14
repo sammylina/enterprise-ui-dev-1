@@ -34,9 +34,9 @@ describe('Kanban Board', () => {
     // Verify that board.statuses contains "Backlog".
   });
 
-  it.todo('should *not* include "Bogus" in board.statuses', () => {
+  it('should *not* include "Bogus" in board.statuses', () => {
     const board = new KanbanBoard('Things to Do');
-    expect.hasAssertions();
+    expect(board.statuses).not.toContain("Bogus")
     // Verify that board.statuses does not contain "Bogus".
   });
 
