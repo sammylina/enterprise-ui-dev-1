@@ -40,7 +40,7 @@ describe('Kanban Board', () => {
     // Verify that board.statuses does not contain "Bogus".
   });
 
-  it.todo(
+  it(
     'should include an added status in board.statuses using #addStatus',
     () => {
       const board = new KanbanBoard('Things to Do');

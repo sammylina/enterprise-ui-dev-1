@@ -3,9 +3,9 @@ name: Run unit test
 
 on:
   push:
-    branches: [main]
+    branches: [main, gaction, action]
   pull_request:
-    branches: [main]
+    branches: [main, gaction, action]
 
 jobs:
   build-and-test:
